@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    android:background="@drawable/weather_background">
+
+    <!-- TextView hiển thị vị trí thời tiết -->
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/default_location"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- TextView hiển thị điều kiện thời tiết -->
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_above="@+id/locationTV"/>
+
+    <!-- TextView hiển thị nhiệt độ thời tiết -->
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="@string/default_temperature"
+        android:layout_below="@+id/condition"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView hiển thị độ ẩm -->
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="Humidity"
+        android:layout_below="@+id/temperatureTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView hiển thị tốc độ gió -->
+    <TextView
+        android:id="@+id/windSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="Wind speed"
+        android:layout_below="@+id/humidityTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView hiển thị hướng gió -->
+    <TextView
+        android:id="@+id/windDirectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="Wind direction"
+        android:layout_below="@+id/windSpeedTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- ImageButton để thay đổi thành phố -->
+    <ImageButton
+        android:id="@+id/changeCityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/change_city_symbol_small"
+        android:contentDescription="@string/change_city_description"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!-- FrameLayout chứa hình ảnh biểu tượng thời tiết -->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true">
+
+        <!-- ImageView hiển thị biểu tượng thời tiết -->
+        <ImageView
+            android:id="@+id/weatherSymbolIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dunno"
+            android:contentDescription="@string/weather_description"/>
+    </FrameLayout>
+
+</RelativeLayout>

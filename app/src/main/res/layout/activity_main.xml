@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    android:background="@drawable/weather_background">
+
+    <!-- TextView hiển thị vị trí thời tiết -->
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Place"
+        android:textColor="#FFEF3A2D"
+        android:textSize="40sp"
+        />
+    <!-- TextView hiển thị vị trí thời tiết -->
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place"
+        android:text="@string/default_location"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFEF3A2D"
+        android:textSize="40sp" />
+    <!-- TextView hiển thị lượng mưa -->
+    <TextView
+        android:id="@+id/rainfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rain fall"
+        android:textColor="#FFEF3A2D"
+        android:textSize="30sp"
+        android:layout_below="@+id/locationTV"/>
+    <!-- TextView hiển thị chỉ số UV -->
+    <TextView
+        android:id="@+id/UVIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="UV Index"
+        android:layout_below="@+id/rainfall"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView hiển thị nhà sản xuất -->
+    <TextView
+        android:id="@+id/manufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="Manufacturer"
+        android:layout_below="@+id/UVIndex"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <!-- TextView hiển thị nhiệt độ -->
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="Temperature"
+        android:layout_below="@+id/manufacturer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView hiển thị độ ẩm -->
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="Humidity"
+        android:layout_below="@+id/temperature"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <!-- TextView hiển thị hướng gió -->
+    <TextView
+        android:id="@+id/windDirectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="Wind direction"
+        android:layout_below="@+id/humidityTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <!-- TextView hiển thị tốc độ gió -->
+    <TextView
+        android:id="@+id/windSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEF3A2D"
+        android:textSize="24sp"
+        android:text="Wind speed"
+        android:layout_below="@+id/windDirectionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

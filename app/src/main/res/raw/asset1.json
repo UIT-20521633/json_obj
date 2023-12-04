@@ -1,0 +1,448 @@
+[
+  {
+    "id": "5zI6XqkQVSfdgOrZ1MyWEf",
+    "version": 34,
+    "createdOn": 1685174897371,
+    "name": "Default Weather",
+    "accessPublicRead": true,
+    "parentId": "4EqQeQ0L4YNWNNTzvTOqjy",
+    "realm": "master",
+    "type": "WeatherAsset",
+    "path": [
+      "4EqQeQ0L4YNWNNTzvTOqjy",
+      "5zI6XqkQVSfdgOrZ1MyWEf"
+    ],
+    "attributes": {
+      "sunIrradiance": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunIrradiance",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685174897362
+      },
+      "rainfall": {
+        "type": "positiveNumber",
+        "value": 0.18,
+        "name": "rainfall",
+        "meta": {
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1701596379991
+      },
+      "notes": {
+        "type": "text",
+        "value": null,
+        "name": "notes",
+        "timestamp": 1701610603611
+      },
+      "uVIndex": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "uVIndex",
+        "meta": {
+          "readOnly": true,
+          "label": "UV index"
+        },
+        "timestamp": 1685174897362
+      },
+      "sunAzimuth": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAzimuth",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685174897362
+      },
+      "sunZenith": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunZenith",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685174897362
+      },
+      "tags": {
+        "type": "text[]",
+        "value": [
+          "default"
+        ],
+        "name": "tags",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685976753120
+      },
+      "manufacturer": {
+        "type": "text",
+        "value": "uiot",
+        "name": "manufacturer",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685976745076
+      },
+      "temperature": {
+        "type": "number",
+        "value": 32.86,
+        "name": "temperature",
+        "meta": {
+          "ruleState": true,
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1701677690064
+      },
+      "humidity": {
+        "type": "positiveInteger",
+        "value": 55,
+        "name": "humidity",
+        "meta": {
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1701677690065
+      },
+      "location": {
+        "type": "GEO_JSONPoint",
+        "value": {
+          "coordinates": [
+            106.80280655508835,
+            10.869778736885038
+          ],
+          "type": "Point"
+        },
+        "name": "location",
+        "timestamp": 1685788326345
+      },
+      "place": {
+        "type": "text",
+        "value": "Bien Hoa",
+        "name": "place",
+        "timestamp": 1701617722472
+      },
+      "windDirection": {
+        "type": "direction",
+        "value": 180,
+        "name": "windDirection",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1701677690068
+      },
+      "windSpeed": {
+        "type": "positiveNumber",
+        "value": 3.09,
+        "name": "windSpeed",
+        "meta": {
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1701677690066
+      },
+      "sunAltitude": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAltitude",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1685174897362
+      }
+    }
+  },
+  {
+    "id": "3xih2945Hes4yxpB15ZyKb",
+    "version": 7,
+    "createdOn": 1699584983195,
+    "name": "DHT11 Asset",
+    "accessPublicRead": false,
+    "parentId": "2kXO1QN2F8HGJlARZ7skhK",
+    "realm": "master",
+    "type": "WeatherAsset",
+    "path": [
+      "2kXO1QN2F8HGJlARZ7skhK",
+      "3xih2945Hes4yxpB15ZyKb"
+    ],
+    "attributes": {
+      "sunIrradiance": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunIrradiance",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "rainfall": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "rainfall",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "notes": {
+        "type": "text",
+        "value": null,
+        "name": "notes",
+        "timestamp": 1699584983184
+      },
+      "uVIndex": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "uVIndex",
+        "meta": {
+          "readOnly": true,
+          "label": "UV index"
+        },
+        "timestamp": 1699584983184
+      },
+      "sunAzimuth": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAzimuth",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "temperature": {
+        "type": "number",
+        "value": 25,
+        "name": "temperature",
+        "meta": {
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1699596000737
+      },
+      "humidity": {
+        "type": "positiveInteger",
+        "value": 78,
+        "name": "humidity",
+        "meta": {
+          "storeDataPoints": true,
+          "readOnly": true
+        },
+        "timestamp": 1699596000645
+      },
+      "location": {
+        "type": "GEO_JSONPoint",
+        "value": null,
+        "name": "location",
+        "timestamp": 1699584983184
+      },
+      "windDirection": {
+        "type": "direction",
+        "value": null,
+        "name": "windDirection",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "windSpeed": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "windSpeed",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "sunAltitude": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAltitude",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      },
+      "sunZenith": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunZenith",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699584983184
+      }
+    }
+  },
+  {
+    "id": "4lt7fyHy3SZMgUsECxiOgQ",
+    "version": 16,
+    "createdOn": 1699854337182,
+    "name": "Weather Asset",
+    "accessPublicRead": false,
+    "parentId": "4kgq1JbqBZBm3Fr5Wvn29O",
+    "realm": "master",
+    "type": "WeatherAsset",
+    "path": [
+      "4kgq1JbqBZBm3Fr5Wvn29O",
+      "4lt7fyHy3SZMgUsECxiOgQ"
+    ],
+    "attributes": {
+      "sunIrradiance": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunIrradiance",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "rainfall": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "rainfall",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "notes": {
+        "type": "text",
+        "value": null,
+        "name": "notes",
+        "timestamp": 1699857976136
+      },
+      "uVIndex": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "uVIndex",
+        "meta": {
+          "readOnly": true,
+          "label": "UV index"
+        },
+        "timestamp": 1699854337175
+      },
+      "PM25": {
+        "type": "number",
+        "value": 7.9,
+        "name": "PM25",
+        "meta": {
+          "storeDataPoints": true,
+          "forecast": null
+        },
+        "timestamp": 1700854681138
+      },
+      "sunAzimuth": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAzimuth",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "CO2": {
+        "type": "number",
+        "value": 430,
+        "name": "CO2",
+        "meta": {
+          "storeDataPoints": true,
+          "showOnDashboard": true,
+          "forecast": null
+        },
+        "timestamp": 1700854681003
+      },
+      "AQI_Predict": {
+        "type": "number",
+        "value": 2,
+        "name": "AQI_Predict",
+        "meta": {
+          "storeDataPoints": true
+        },
+        "timestamp": 1701175689618
+      },
+      "sunZenith": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunZenith",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "temperature": {
+        "type": "number",
+        "value": null,
+        "name": "temperature",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1700123877694
+      },
+      "AQI": {
+        "type": "integer",
+        "value": 2,
+        "name": "AQI",
+        "meta": {
+          "storeDataPoints": true,
+          "forecast": null
+        },
+        "timestamp": 1701175463492
+      },
+      "PM10": {
+        "type": "number",
+        "value": 11.9,
+        "name": "PM10",
+        "meta": {
+          "storeDataPoints": true,
+          "format": null
+        },
+        "timestamp": 1700854681265
+      },
+      "humidity": {
+        "type": "positiveInteger",
+        "value": 99,
+        "name": "humidity",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1700498121868
+      },
+      "location": {
+        "type": "GEO_JSONPoint",
+        "value": null,
+        "name": "location",
+        "timestamp": 1699854337175
+      },
+      "windDirection": {
+        "type": "direction",
+        "value": null,
+        "name": "windDirection",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "windSpeed": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "windSpeed",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      },
+      "sunAltitude": {
+        "type": "positiveNumber",
+        "value": null,
+        "name": "sunAltitude",
+        "meta": {
+          "readOnly": true
+        },
+        "timestamp": 1699854337175
+      }
+    }
+  }
+]

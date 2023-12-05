@@ -1,4 +1,5 @@
 package com.example.app.asset;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Attributes { //Thuộc tính
     public SunIrradiance sunIrradiance; //bức xạ mặt trời
@@ -16,11 +17,16 @@ public class Attributes { //Thuộc tính
     public  WindDirection windDirection; //Hướng gió
     public  WindSpeed windSpeed; //Tốc độ gió
     public  SunAltitude sunAltitude; //Độ cao mặt trời
-    public  PM25 pM25;
-    public  CO2 cO2;
-    public  AQIPredict aQI_Predict; //Dự đoán chỉ số Chất lượng Không khí(AQI)
-    public  AQI aQI;
-    public  PM10 pM10;
+    @JsonProperty("PM25")
+    public PM25 pM25;
+    @JsonProperty("CO2")
+    public CO2 cO2;
+    @JsonProperty("AQI_Predict")
+    public AQIPredict aQI_Predict;
+    @JsonProperty("AQI")
+    public AQI aQI;
+    @JsonProperty("PM10")
+    public PM10 pM10;
 
 
     public Attributes() {

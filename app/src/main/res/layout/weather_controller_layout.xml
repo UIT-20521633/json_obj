@@ -1,104 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_padding"
-    android:background="@drawable/weather_background">
-
-    <!-- TextView hiển thị vị trí thời tiết -->
+    android:background="@drawable/weather_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
     <TextView
-        android:id="@+id/locationTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/default_location"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:layout_alignParentBottom="true"/>
-
-    <!-- TextView hiển thị điều kiện thời tiết -->
-    <TextView
-        android:id="@+id/condition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:layout_above="@+id/locationTV"/>
-
-    <!-- TextView hiển thị nhiệt độ thời tiết -->
-    <TextView
-        android:id="@+id/temperatureTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:text="@string/default_temperature"
-        android:layout_below="@+id/condition"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
-
-    <!-- TextView hiển thị độ ẩm -->
-    <TextView
-        android:id="@+id/humidityTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:text="Humidity"
-        android:layout_below="@+id/temperatureTextView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
-
-    <!-- TextView hiển thị tốc độ gió -->
-    <TextView
-        android:id="@+id/windSpeedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:text="Wind speed"
-        android:layout_below="@+id/humidityTextView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
-
-    <!-- TextView hiển thị hướng gió -->
-    <TextView
-        android:id="@+id/windDirectionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:text="Wind direction"
-        android:layout_below="@+id/windSpeedTextView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"/>
-
-    <!-- ImageButton để thay đổi thành phố -->
-    <ImageButton
-        android:id="@+id/changeCityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/change_city_symbol_small"
-        android:contentDescription="@string/change_city_description"
-        android:background="@null"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"/>
-
-    <!-- FrameLayout chứa hình ảnh biểu tượng thời tiết -->
-    <FrameLayout
-        android:id="@+id/frame"
+        android:id="@+id/place"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_centerInParent="true">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Cibadak"
+        android:textColor="#F8F8FF"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
 
-        <!-- ImageView hiển thị biểu tượng thời tiết -->
-        <ImageView
-            android:id="@+id/weatherSymbolIV"
+    <TextView
+        android:id="@+id/AirIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="32"
+        android:textColor="#F8F8FF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/place"
+        />
+
+    <TextView
+        android:id="@+id/lbAirIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Air Quality Index"
+        android:textColor="#F8F8FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/AirIndex"/>
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Good"
+        android:textColor="#F8F8FF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/lbAirIndex"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/rcv_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_padding"
+        android:background="@drawable/weather_background"
+        android:layout_below="@+id/index">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/dunno"
-            android:contentDescription="@string/weather_description"/>
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_Sun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_Weather"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Index"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_Index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
 
 </RelativeLayout>
+
